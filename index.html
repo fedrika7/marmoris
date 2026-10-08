@@ -299,6 +299,706 @@ footer .it{color:rgba(242,237,228,.6)}.def .dim{font:300 .85rem var(--font-testo
 .mm-link{display:flex;align-items:baseline;gap:1rem;padding:1.2rem 0;border-bottom:1px solid rgba(242,237,228,.1)}
 .mm-link span{font-size:.62rem;letter-spacing:.3em;color:var(--gold)}.mm-link b{font:400 2.3rem var(--font-titoli);letter-spacing:.1em}
 .mm-list p.mm-link{border:0;margin-top:2rem;color:rgba(242,237,228,.5)}
+
+   /* =========================================================
+   MARMÒRIS — CORREZIONI MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .wrap {
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  /* ---------- HEADER ---------- */
+
+  header .nav {
+    min-height: 64px;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+  }
+
+  .brand {
+    min-width: 0;
+    gap: .55rem;
+  }
+
+  .brand img {
+    width: 34px;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .brand b {
+    font-size: .92rem;
+    letter-spacing: .25em;
+    white-space: nowrap;
+  }
+
+  .burger {
+    font-size: 1.45rem;
+    line-height: 1;
+    padding: .25rem;
+  }
+
+
+  /* ---------- HERO ---------- */
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .hero .im {
+    order: -1;
+    width: 100%;
+    height: 58svh;
+    min-height: 400px;
+    max-height: 650px;
+  }
+
+  .hero .im .ph {
+    position: absolute;
+    inset: 0;
+  }
+
+  .hero .tx {
+    width: 100%;
+    padding: 4rem 1.25rem 4.5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.4rem, 14vw, 5.8rem);
+    line-height: .92;
+    margin-top: 1.5rem;
+  }
+
+  .hero p.l {
+    max-width: none;
+    margin-top: 1.6rem;
+    font-size: .88rem;
+    line-height: 1.7;
+  }
+
+  .hero .ctas {
+    margin-top: 2rem;
+    gap: 1.2rem;
+    align-items: flex-start;
+  }
+
+  .hero .ctas .btn {
+    padding: .95rem 1.25rem;
+  }
+
+  .hero .meta {
+    display: none;
+  }
+
+  .hero .cap {
+    right: .8rem;
+    bottom: .8rem;
+    max-width: calc(100% - 1.6rem);
+    padding: .6rem .8rem;
+    font-size: .5rem;
+    line-height: 1.4;
+  }
+
+  .giant {
+    display: none;
+  }
+
+
+  /* ---------- FASCIA ---------- */
+
+  .mq {
+    padding: 1.35rem 0;
+  }
+
+  .mq span {
+    font-size: clamp(1.35rem, 6vw, 2rem);
+  }
+
+  .mq .mk {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 1.3rem;
+  }
+
+
+  /* ---------- SEZIONI ---------- */
+
+  .sec {
+    padding: 5.5rem 0;
+  }
+
+  .bar {
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .bar span {
+    font-size: .55rem;
+    letter-spacing: .28em;
+  }
+
+
+  /* ---------- STORIA ---------- */
+
+  .storia {
+    display: block;
+  }
+
+  .storia .col {
+    margin-bottom: 3rem;
+  }
+
+  .storia .ph {
+    width: 100%;
+    aspect-ratio: 4 / 5 !important;
+  }
+
+  .cap2 {
+    margin-top: .8rem;
+    gap: 1rem;
+    font-size: .52rem;
+  }
+
+  .big {
+    font-size: 1.45rem;
+    line-height: 1.35;
+  }
+
+  .quote {
+    margin: 3rem 0;
+    padding-left: 1.25rem;
+  }
+
+  .quote p.q {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+
+  .storia > div:last-child > p[style] {
+    max-width: none !important;
+    font-size: .9rem !important;
+  }
+
+  .close {
+    margin-top: 3rem;
+    font-size: clamp(1.9rem, 8vw, 3rem) !important;
+  }
+
+
+  /* ---------- MARCHIO ---------- */
+
+  .marchio {
+    display: block;
+  }
+
+  .marchio-mark {
+    width: 75%;
+    max-width: 20rem;
+    margin: 0 auto;
+  }
+
+  .marchio .sub {
+    margin-top: 1.2rem;
+  }
+
+  .marchio .txt {
+    margin-top: 3.5rem;
+  }
+
+  .marchio .txt > * + * {
+    margin-top: 2rem;
+  }
+
+  .marchio h2 {
+    font-size: clamp(2.3rem, 9vw, 4rem);
+    line-height: 1.08;
+  }
+
+  .marchio .txt p {
+    font-size: .88rem;
+  }
+
+  .def {
+    padding-left: 1rem;
+  }
+
+  .def b {
+    font-size: 1.25rem;
+  }
+
+  .marchio-bgword {
+    display: none;
+  }
+
+  .pal {
+    margin-top: 5rem;
+  }
+
+  .pal .hd {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .pal .hd h3 {
+    margin-bottom: .8rem;
+  }
+
+  .pal .hd p {
+    max-width: none !important;
+    font-size: .82rem !important;
+  }
+
+  .sw {
+    grid-template-columns: 1fr;
+  }
+
+  .sw div {
+    padding: 1.4rem;
+  }
+
+  .sw i {
+    height: 5rem;
+  }
+
+  .sw b {
+    font-size: 1rem;
+  }
+
+  .sw p {
+    font-size: .75rem;
+  }
+
+
+  /* ---------- COLLEZIONI ---------- */
+
+  .cols .chead {
+    display: block;
+    margin-bottom: 3.5rem;
+  }
+
+  .chead h2 {
+    max-width: none !important;
+    font-size: clamp(2.5rem, 10vw, 4.5rem) !important;
+  }
+
+  .chead p {
+    max-width: none;
+    margin-top: 1.2rem;
+    font-size: .85rem;
+  }
+
+  .cgrid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .card:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .card .ph {
+    aspect-ratio: 4 / 5;
+  }
+
+  .card .tag {
+    left: .75rem;
+    top: .75rem;
+    padding: .5rem .75rem;
+    font-size: .52rem;
+  }
+
+  .card .row {
+    display: block;
+    margin-top: 1.2rem;
+  }
+
+  .card .nm {
+    gap: .75rem;
+  }
+
+  .card .nm span {
+    font-size: 2.2rem;
+  }
+
+  .card h3 {
+    font-size: 1.55rem;
+  }
+
+  .card .row > .eb {
+    display: block;
+    margin-top: .8rem;
+    padding-top: 0;
+    font-size: .55rem;
+  }
+
+  .card p {
+    max-width: none;
+    font-size: .84rem;
+  }
+
+  .arr {
+    width: 2.5rem;
+    height: 2.5rem;
+    opacity: 1;
+  }
+
+
+  /* ---------- TAGLIO ---------- */
+
+  .proc .head {
+    padding-top: 5.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .proc .head h2 {
+    font-size: clamp(2.5rem, 10vw, 4.2rem);
+    line-height: 1.05;
+  }
+
+  .proc .head > p {
+    font-size: .55rem;
+  }
+
+  .pin {
+    overflow: hidden;
+  }
+
+  .trk {
+    width: max-content;
+  }
+
+  .st {
+    flex: 0 0 84vw;
+    padding: 0 .75rem 5rem;
+  }
+
+  .st .n {
+    gap: .8rem;
+  }
+
+  .st .n span {
+    font-size: clamp(3.5rem, 15vw, 6rem);
+  }
+
+  .st .n i {
+    width: 2.5rem;
+  }
+
+  .st .ph {
+    margin-top: 1.5rem;
+    aspect-ratio: 4 / 3;
+  }
+
+  .st p {
+    margin-top: 1.1rem;
+    max-width: none;
+    font-size: .82rem;
+  }
+
+  .fin {
+    flex: 0 0 82vw;
+    padding: 0 .75rem 5rem;
+  }
+
+  .fin p.it {
+    font-size: 1.7rem;
+  }
+
+  .prog {
+    bottom: 2rem;
+    left: 1.25rem;
+    right: 1.25rem;
+  }
+
+
+  /* ---------- BOUTIQUE ---------- */
+
+  .bt {
+    display: block;
+  }
+
+  .bt .ph {
+    min-height: 65svh;
+    max-height: 700px;
+  }
+
+  .bt .tx {
+    padding: 4.5rem 1.25rem 5rem;
+  }
+
+  .bt h2 {
+    font-size: clamp(2.4rem, 9vw, 4rem);
+    margin: 1.5rem 0 2.5rem;
+  }
+
+  .inf > div {
+    padding: 1rem 0;
+  }
+
+  .inf .big2 {
+    font-size: 1.1rem;
+  }
+
+  .inf .r {
+    font-size: .8rem;
+    gap: 1rem;
+  }
+
+  .how {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    margin: 2.2rem 0;
+  }
+
+  .how b {
+    font-size: 1rem;
+  }
+
+  .how p {
+    font-size: .76rem;
+  }
+
+  .bt .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  footer {
+    padding: 5rem 0 2rem;
+  }
+
+  .fn {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  footer h3 {
+    font-size: clamp(1.8rem, 7vw, 2.6rem);
+  }
+
+  .nf {
+    width: 100%;
+  }
+
+  .fc {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 3rem 0;
+  }
+
+  .fc .brand {
+    margin-bottom: 1.3rem;
+  }
+
+  .fc .brand img {
+    width: 38px;
+  }
+
+  .fc .brand b {
+    font-size: 1rem;
+  }
+
+  .fw {
+    padding-left: 0;
+    font-size: 20vw;
+    letter-spacing: .15em;
+  }
+
+  .fb {
+    display: block;
+    font-size: .58rem;
+    line-height: 1.7;
+  }
+
+  .fb span,
+  .fb a {
+    display: block;
+    margin-bottom: .35rem;
+  }
+
+
+  /* ---------- MODALE ---------- */
+
+  #modal {
+    padding: .75rem;
+  }
+
+  .modal-panel {
+    max-height: 94svh;
+  }
+
+  .mg {
+    grid-template-columns: 1fr;
+  }
+
+  .mi {
+    min-height: 58vw;
+    max-height: 48svh;
+  }
+
+  .mt {
+    padding: 1.5rem;
+  }
+
+  .mt h3 {
+    font-size: 2.2rem;
+  }
+
+  .mt .mp {
+    font-size: .84rem;
+  }
+
+  .mdata dl div,
+  .mt dl div {
+    gap: .75rem;
+    font-size: .76rem;
+  }
+
+  .mdata dt,
+  .mt dt {
+    font-size: .5rem;
+  }
+
+  .mdata dd,
+  .mt dd {
+    max-width: 62%;
+  }
+
+  .mx {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+
+  /* ---------- EDITOR ---------- */
+
+  #edbtn {
+    right: .75rem;
+    bottom: .75rem;
+    padding: .7rem 1rem;
+    font-size: .62rem;
+  }
+
+  #edbar {
+    padding: .65rem .75rem;
+    font-size: .72rem;
+  }
+
+  #edbar button {
+    padding: .5rem .8rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .wrap {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero .im {
+    height: 52svh;
+    min-height: 360px;
+  }
+
+  .hero .tx {
+    padding: 3.5rem 1rem 4rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.1rem, 14.5vw, 5rem);
+  }
+
+  .hero .ctas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1rem;
+  }
+
+  .hero .ctas .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .bar {
+    margin-bottom: 2.4rem;
+  }
+
+  .bar span:last-child {
+    display: none;
+  }
+
+  .sec {
+    padding: 4.5rem 0;
+  }
+
+  .storia .ph {
+    aspect-ratio: 3 / 4 !important;
+  }
+
+  .quote {
+    margin: 2.5rem 0;
+  }
+
+  .marchio-mark {
+    width: 82%;
+  }
+
+  .sw div {
+    padding: 1.2rem;
+  }
+
+  .cgrid {
+    gap: 3rem;
+  }
+
+  .card .nm span {
+    font-size: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1.4rem;
+  }
+
+  .st {
+    flex-basis: 88vw;
+  }
+
+  .fin {
+    flex-basis: 88vw;
+  }
+
+  .bt .ph {
+    min-height: 55svh;
+  }
+
+  .nf input {
+    min-width: 0;
+    font-size: .78rem;
+  }
+
+  .fc {
+    gap: 2rem;
+  }
+}
 </style>
 </head>
 <body>
